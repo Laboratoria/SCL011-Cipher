@@ -248,11 +248,11 @@ Diseño de experiencia de usuario (User Experience Design):
 
 Desarrollo Front-end:
 
-* [Valores](https://lms.laboratoria.la/cohorts/scl-2019-06-bc-core-scl010/courses/javascript/01-basics/01-values-variables-and-types)
-* [Tipos](https://lms.laboratoria.la/cohorts/scl-2019-06-bc-core-scl010/courses/javascript/01-basics/01-values-variables-and-types)
-* [Variables](https://lms.laboratoria.la/cohorts/scl-2019-06-bc-core-scl010/courses/javascript/01-basics/02-variables)
-* [Control de flujo](https://lms.laboratoria.la/cohorts/scl-2019-06-bc-core-scl010/courses/javascript/02-flow-control/00-opening)
-* [Tests unitarios](https://lms.laboratoria.la/cohorts/scl-2019-06-bc-core-scl010/courses/javascript/11-testing/00-opening)
+* [Valores](https://lms.laboratoria.la/cohorts/scl-2019-08-bc-core-scl011/courses/javascript/01-basics/01-values-variables-and-types)
+* [Tipos](https://lms.laboratoria.la/cohorts/scl-2019-08-bc-core-scl011/courses/javascript/01-basics/01-values-variables-and-types)
+* [Variables](https://lms.laboratoria.la/cohorts/scl-2019-08-bc-core-scl011/courses/javascript/01-basics/02-variables)
+* [Control de flujo](https://lms.laboratoria.la/cohorts/scl-2019-08-bc-core-scl011/courses/javascript/02-flow-control/00-opening)
+* [Tests unitarios](https://lms.laboratoria.la/cohorts/scl-2019-08-bc-core-scl011/courses/javascript/11-testing/00-opening)
 * [Aprende más sobre `charCodeAt()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/charCodeAt)
 * [Aprende más sobre `String.fromCharCode()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/fromCharCode)
 * [Aprende más sobre `ASCII`](http://conceptodefinicion.de/ascii/)
