@@ -1,1 +1,83 @@
-/* Acá va tu código */
+*{
+    margin: 0;
+    padding: 0;
+    }
+    
+    h1{
+     color: rgb(230, 46, 22);
+     text-align: center;
+     bottom: 40%;
+     font-family: 'Roboto', sans-serif;
+     
+    }
+    
+    h2{
+        color: blue;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        
+       }
+    body{
+        background: url('https://hearteyeshelp.files.wordpress.com/2014/02/3report-bullying-sketch-blog.jpg') no-repeat 
+        fixed center center;
+        background-size: cover;
+    }
+    
+    
+    
+    .content{
+        
+        height: 400px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .boton1{
+        float: left;
+        text-decoration: none;
+        padding:5px;
+        margin: 4px;
+        font-weight: 400;
+        font-size: 20px;
+        color: blue;
+        background-color: #8A2BE2(22, 230, 195);
+        ;          
+        border-radius: 6px;
+       
+    }
+    .boton2{
+        float: right;
+        text-decoration: none;
+        padding:5px;
+        margin: 4px;
+        font-weight: 400;
+        font-size: 20px;
+        color: blue;
+        background-color: #8A2BE2(25, 117, 14);          
+        border-radius: 6px;
+    
+    }
+    
+    #resultado{
+        margin: 20%;
+    
+    }
+        
+    #textBox{
+        width: 100%;
+        border-color:rgba(61, 2, 170, 0.849);
+     
+    
+    }
+    
+    #numHash{
+        width: 120px;
+    }
+    
+    #msgEncode, #msgDecode{
+        color:white;
+        display: none;
+    }
+    
+    

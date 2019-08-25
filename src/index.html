@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+<head>
+  <meta charset="utf-8">
+  <!-- meta le proporciona al navegador como controlar dimensiones  y escala de la pantalla -->
+  <!--width=device-width establece el ancho de la página para seguir el ancho de la pantalla del dispositivo-->
+  <!--initial-scale=1.0 establece el nivel de zoom inicial cuando el navegador carga la página por primera vez-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caesar Cipher</title>
+  <link href="https://hearteyeshelp.files.wordpress.com/2014/02/3report-bullying-sketch-blog.jpg" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1>No mas bullying</h1><br>
+<h2>No te quedes callados son coversaciones anonimas y secretas!</h2>
+  <div id="root" class="content">
+    <div class="teenagers">
+      <div id="encryptedmessage">Frase Cifrada:</div>
+      <div id="decryptedmessage">Frase Decifrada:</div>
+      <textarea id="textBox" rows="8" cols="60" placeholder="Ingrese Mensaje" ></textarea> <br>
+      <input id="number" type="text" placeholder="Desplazamiento>>">
+      <div class="botones">
+        
+        <button class="boton1" onclick="encode()" >cifrar</button>
+        <button class="boton1" onclick="decode()" >descifrar</button>
+        <button class="boton2" onclick="resetData()" >limpiar</button>
     </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+  </div>
+
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+
+</body>
 </html>
