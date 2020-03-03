@@ -1,47 +1,46 @@
-window.cipher = {
-  encode: (string,offset) => {
-    /* los elementos que queremos desplazar a la derecha */
+const encode = (offset, string) => {
+  let nuevoTexto = '';
+  for (let i = 0; i < string.length; i++) {
+    let convAscii = string.charCodeAt(i);
 
-   /* console.log('encode'); */
-    let newTermino='';
-    for (var i = 0; i<string.length; i++) {
-       // texto a descifrar-convertir a Mayusculas/ obtener ascii en esa posicion
-       let resultAscii= string[i].toUpperCase().charCodeAt();//obtenemos ascii;
-
-       if(resultAscii===32){
-        newTermino+=' ';
-      }else{
-        let newAscii = (resultAscii - 65 + offset) % 26 + 65;//formula cifrado cesar
-        let resultnew = String.fromCharCode(newAscii); //convierte el ascii sustituto en la nueva letra s
-        newTermino+=resultnew;
-      }
-       
-      }
-      /*console.log(newTermino);*/
-    return newTermino;
-   
-
-  },
-  /* los elementos que queremos desplazar a la izquierda */
-  decode: (string,offset) => {
-    //console.log('decode');
-    let newTermino='';
-    for (var i =0; i<string.length; i++){
-      let resultAscii=string[i].toUpperCase().charCodeAt();
-      if(resultAscii===32){
-        newTermino+=' ';
-      }else{
-        let newAscii= (resultAscii + 65 - offset) % 26 + 65;
-        let resultnew = String.fromCharCode(newAscii);
-        newTermino += resultnew;
-       
-      }
-      
+    if (convAscii >= 65 && convAscii <= 90) {
+      nuevoTexto += String.fromCharCode((convAscii - 65 + parseInt(offset)) % 26 + 65); // Mayus Ascii: 65 - 90
+    } else if (convAscii >= 97 && convAscii <= 122) {
+      nuevoTexto += String.fromCharCode((convAscii - 97 + parseInt(offset)) % 26 + 97); // Minus Ascii: 97 - 122
+    } else {                            
+      nuevoTexto += string[i];       // concateno los números, signos, espacios y caracteres especiales
     }
-    /*console.log(newTermino);*/
-    return newTermino;
-    
-
-    
   }
-} 
+  return nuevoTexto;
+};
+
+
+const decode = (offset, string) => {
+  let nuevoTexto = '';
+  // let key = parseInt(offset);
+  for (let i = 0; i < string.length; i++) {
+    let convAscii = string.charCodeAt(i);
+    if (convAscii >= 65 && convAscii <= 90) {
+      nuevoTexto += String.fromCharCode((convAscii - 90 - parseInt(offset)) % 26 + 90);
+    } else if (convAscii >= 97 && convAscii <= 122) {
+      nuevoTexto += String.fromCharCode((convAscii - 122 - parseInt(offset)) % 26 + 122);
+    } else {
+      nuevoTexto += string[i];
+    }
+  }
+  return nuevoTexto;
+};
+
+
+window.cipher = {    //"cipher" es el nombre del objeto, si deseo puedo CAMBIAR de nombre del objeto.
+  encode,
+  decode,
+
+  createCipherWithOffset: (offset) => ({  //el offset 
+    encode: string => encode(offset, string), // El Nombre del 1er encode puede cambiar. Le puse encode, porque así lo pide el ejercicio
+    decode: string => decode(offset, string), // El Nombre del 1er decode puede cambiar. Le puse decode, porque así lo pide el ejercicio
+  }),
+}
+
+//Probando en la consola:
+//console.log(window.cipher.encode(33,'ABCDEFGHIJKLMNOPQRSTUVWXYZ') ==='HIJKLMNOPQRSTUVWXYZABCDEFG');

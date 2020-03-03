@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <!-- meta le proporciona al navegador como controlar dimensiones  y escala de la pantalla -->
   <!--width=device-width establece el ancho de la página para seguir el ancho de la pantalla del dispositivo-->
   <!--initial-scale=1.0 establece el nivel de zoom inicial cuando el navegador carga la página por primera vez-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Caesar Cipher</title>
   <link href="https://hearteyeshelp.files.wordpress.com/2014/02/3report-bullying-sketch-blog.jpg" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
@@ -31,4 +31,47 @@
   <script src="index.js"></script>
 
 </body>
+</html> --> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Esta linea lo vuelve Responsive:  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <form>
+    <h2>Mensaje Cifrado</h2>
+    <img src="images/bullying.gif" width="100%" height="25%"> <br>  <br>
+    <input type="text" id="ingTextoHtml" placeholder="Escribe tu mensaje" required>
+    <input type="number" id="keyHtml" placeholder="Escribe N° de posiciones" min="1" value="" required>
+
+
+    <!-- Creando los botones: encriptar, desencriptar -->
+    <div>
+      <input type="button" value="CIFRAR" id="botonE" class="boton"> </div>
+    <div>
+      <input type="button" value="DECIFRAR" id="botonD" class="boton"> </div>
+
+      
+    <!-- Creando una caja de texto para mostrar el resulñtado -->
+    <input type="text" id="salTextoHtml" placeholder="Resultado" readonly="readonly">
+
+
+    <!-- Creando el boton: limpiar -->
+    <input type="button" value="LIMPIAR" id="botonLimpiar" class="boton">
+  </form>
+
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>

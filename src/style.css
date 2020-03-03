@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     }
@@ -79,5 +79,51 @@
         color:white;
         display: none;
     }
+     */
     
-    
+     body
+{
+background-image:url(http://www.expofabric.com.sg/images/collection/blackout/Blackout%20-%20Blue.jpg);
+background-size: 100vw 100vh; /* ancho y altura del viewport CSS 3*/
+}
+
+form
+{
+width:300px;
+margin: auto;  /* para centrar el formulario */    
+background: black; 
+padding: 10px 20px;  
+box-sizing: border-box;    
+margin-top: 20px;
+border-radius: 7px;  /* ESQUINAS REDONDAS */
+}
+
+image
+{
+margin: auto;
+width: 100%;
+}
+
+h2
+{
+color:#fff;  /*Genera color blanco */
+text-align: center;
+font-size: 30px;
+margin-bottom: 20px;     
+}
+
+div {
+display: inline-block;
+margin:auto;
+width: 48%
+}
+
+input
+{
+width: 100%;
+margin-bottom: 20px;
+padding: 7px;
+box-sizing: border-box;
+font-size: 17px;
+border: none;    
+}
