@@ -48,6 +48,9 @@ margin-bottom: 20px;
 padding: 7px;
 box-sizing: border-box;
 font-size: 17px;
+border: none;    
+}
 
-
+.boton{
+    border-radius: 1px pink;
 }
