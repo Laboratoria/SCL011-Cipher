@@ -1,97 +1,16 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    }
-    
-    h1{
-     color: rgb(230, 46, 22);
-     text-align: center;
-     bottom: 40%;
-     font-family: 'Roboto', sans-serif;
-     
-    }
-    
-    h2{
-        color: blue;
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-        
-       }
-    body{
-        background: url('https://hearteyeshelp.files.wordpress.com/2014/02/3report-bullying-sketch-blog.jpg') no-repeat 
-        fixed center center;
-        background-size: cover;
-    }
-    
-    
-    
-    .content{
-        
-        height: 400px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .boton1{
-        float: left;
-        text-decoration: none;
-        padding:5px;
-        margin: 4px;
-        font-weight: 400;
-        font-size: 20px;
-        color: blue;
-        background-color: #8A2BE2(22, 230, 195);
-        ;          
-        border-radius: 6px;
-       
-    }
-    .boton2{
-        float: right;
-        text-decoration: none;
-        padding:5px;
-        margin: 4px;
-        font-weight: 400;
-        font-size: 20px;
-        color: blue;
-        background-color: #8A2BE2(25, 117, 14);          
-        border-radius: 6px;
-    
-    }
-    
-    #resultado{
-        margin: 20%;
-    
-    }
-        
-    #textBox{
-        width: 100%;
-        border-color:rgba(61, 2, 170, 0.849);
-     
-    
-    }
-    
-    #numHash{
-        width: 120px;
-    }
-    
-    #msgEncode, #msgDecode{
-        color:white;
-        display: none;
-    }
-     */
-    
-     body
+
+ body
 {
-background-image:url(http://www.expofabric.com.sg/images/collection/blackout/Blackout%20-%20Blue.jpg);
-background-size: 100vw 100vh; /* ancho y altura del viewport CSS 3*/
+background-image:url(./images/bully.jpeg);
+background-size: 95vw 100vh; /* ancho y altura del viewport CSS 3*/
 }
 
 form
 {
 width:300px;
 margin: auto;  /* para centrar el formulario */    
-background: black; 
+background: rgb(226, 222, 222); 
+opacity: 0.7;
 padding: 10px 20px;  
 box-sizing: border-box;    
 margin-top: 20px;
@@ -106,7 +25,8 @@ width: 100%;
 
 h2
 {
-color:#fff;  /*Genera color blanco */
+color: black;  /*Genera color blanco */
+font-weight: bold;
 text-align: center;
 font-size: 30px;
 margin-bottom: 20px;     
@@ -120,10 +40,14 @@ width: 48%
 
 input
 {
+background-color: cornflowerblue;
+color:black;
+font-weight: bold;
 width: 100%;
 margin-bottom: 20px;
 padding: 7px;
 box-sizing: border-box;
 font-size: 17px;
-border: none;    
+
+
 }
