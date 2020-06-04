@@ -1,1 +1,63 @@
-/* Acá va tu código */
+
+ body
+{
+    background-image: url(./images/bully.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+   
+}
+
+form
+{
+    width: 300px;
+    margin: auto;
+    background: rgba(216, 99, 99, 0.4);
+    /* opacity: 0.7; */
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 80px;
+    border-radius: 7px;
+}
+
+image
+{
+margin: auto;
+width: 100%;
+}
+
+h2
+{
+color: black;  /*Genera color blanco */
+font-weight: bold;
+text-align: center;
+font-size: 30px;
+margin-bottom: 20px;     
+}
+
+div {
+display: inline-block;
+margin:auto;
+width: 48%
+}
+
+input 
+{
+    background-color:#0be1f799;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+.btn:hover .boton {
+color: red;
+}
+

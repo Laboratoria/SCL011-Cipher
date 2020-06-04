@@ -1,15 +1,46 @@
+
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Esta linea lo vuelve Responsive:  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Cesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+  <form>
+    <h2>Mensaje Cifrado</h2>
+    <img src="images/bullying.gif" width="100%" height="25%"> <br>  <br>
+    <input type="text" id="ingTextoHtml" placeholder="Escribe tu mensaje" required>
+    <input type="number" id="keyHtml" placeholder="Escribe N° de posiciones" min="1" value="" required>
+
+
+    <!-- Creando los botones: encriptar, desencriptar -->
+    <div class="btn">
+      <input type="button" value="CIFRAR" id="botonE" class="boton"> 
     </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+    <div class="btn">
+      <input type="button" value="DECIFRAR" id="botonD" class="boton"> 
+    </div>
+
+      
+    <!-- Creando una caja de texto para mostrar el resulñtado -->
+    <input type="text" id="salTextoHtml" placeholder="Resultado" readonly="readonly">
+
+
+    <!-- Creando el boton: limpiar -->
+    <input type="button" value="LIMPIAR" id="botonLimpiar" class="boton">
+  </form>
+
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
